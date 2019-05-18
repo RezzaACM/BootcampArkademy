@@ -1,0 +1,36 @@
+{
+    "nama": "Funky Reza",
+    "address": "Villa Mutiara Serpong D3/26 Kel.Pondok Jagung Timur, Kec.Serpong Utara Tangerang Selatan - Banten",
+    "hobbies": [
+        "Futsal",
+        "Gaming",
+        "Coding"
+    ],
+    "is_married": false,
+    "school" : {
+        "highschool" : "SMKS Fadilah Pondok Aren",
+        "university" : "Universitas Pamulang"
+    },
+    "skills" : [
+        {
+            "name" : "PHP",
+            "score" : 8.5
+        },
+        {
+            "name" : "HTML",
+            "score" : 9
+        },
+        {
+            "name" : "CSS",
+            "score" : 9
+        },
+        {
+            "name" : "Python",
+            "score" : 7
+        },
+        {
+            "name" : "JavaScript",
+            "score" : 8
+        },
+    ]
+}
