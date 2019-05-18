@@ -17,8 +17,100 @@
         $data = file_get_contents('biodata.json');
         $biodata = json_decode($data, true);
 
-        echo $biodata ["hobbies"][0];
+        var_dump($biodata);
+
+
     ?>
+
+        <h1 class="text-center">My Biodata</h1>
+        <table>
+            <tr>
+                <td>
+                    Nama
+                </td>
+                <td>
+                    :
+                </td>
+                <td>
+                    <?php echo $biodata ["nama"] ?>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address
+                </td>
+                <td>
+                    :
+                </td>
+                <td>
+                <?php echo $biodata ["address"] ?>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Hobbies
+                </td>
+                <td>
+                    :
+                </td>
+                <td>
+                <?php echo $biodata ["hobbies"][1] ?>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Status
+                </td>
+                <td>
+                    :
+                </td>
+                <td>
+                <?php 
+
+                if ($biodata ["is_married"] == false){
+                    echo "Single";
+                }else{
+                    echo "Married";
+                }
+                
+                ?>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    School
+                </td>
+                <td>
+                    :
+                </td>
+                <td>
+                <?php echo $biodata ["school"]["highschool"] ?>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    University
+                </td>
+                <td>
+                    :
+                </td>
+                <td>
+                <?php echo $biodata ["school"]["university"] ?>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Skills
+                </td>
+                <td>
+                    :
+                </td>
+                <td>
+                <?php echo $biodata ["skills"]["0"]["name"] ?>
+                </td>
+            </tr>
+       
+         </table>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
